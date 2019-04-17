@@ -22,26 +22,18 @@ public class TextWrap {
 			throw new NullPointerException("input string cannot be null");
 
 		if (str.length() > 0) {
-			// tokenize the string input and write it to list
-			StringTokenizer defaultTokenizer = new StringTokenizer(str);
-			
-			//use LinkedList to store all the tokens in correct order
-			List<String> listOfTokens = new LinkedList<String>();
+			// tokenize the string input
+			String []tokens = str.split(" ");
 
-			while (defaultTokenizer.hasMoreTokens()) {
-
-				String token = defaultTokenizer.nextToken();
-
+			for (String string : tokens) {
 				// throw Exception if each token length is greater than MAX_CHARACTERS
-				if (token.length() > MAX_CHARACTERS) {
-					throw new Exception(String.format(" word: \'%s\' has more than %s characters. ", token, MAX_CHARACTERS));
+				if (string.length() > MAX_CHARACTERS) {
+					throw new Exception(String.format(" word: \'%s\' has more than %s characters. ", string, MAX_CHARACTERS));
 				}
-
-				listOfTokens.add(token);
 			}
 
 			String textWrapToken = "";
-			for (String string : listOfTokens) {
+			for (String string : tokens) {
 
 				//As we have tokenized the input string based on spaces, now add a space at the end of each token
 				string = string + " ";
@@ -54,7 +46,9 @@ public class TextWrap {
 				}
 			}
 
-			System.out.println(textWrapToken.trim());
+			if (textWrapToken!=null) {
+				System.out.println(textWrapToken.trim());
+			}
 			
 			return true;
 		} else {
