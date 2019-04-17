@@ -25,7 +25,8 @@ that all men
 are created
 equal
 
-Solution:
+
+Solution: provided in TestWrap Project
 
 Build locally: 
   cd to Text_Wrap
