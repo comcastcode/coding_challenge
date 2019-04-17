@@ -26,6 +26,7 @@ are created
 equal
 
 Solution:
+
 Build locally: 
   cd to Text_Wrap
   gradlew clean build
