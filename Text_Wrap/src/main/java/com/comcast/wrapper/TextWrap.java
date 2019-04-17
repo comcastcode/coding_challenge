@@ -1,9 +1,5 @@
 package com.comcast.wrapper;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.StringTokenizer;
-
 public class TextWrap {
 
 	private final static int MAX_CHARACTERS = 13;
