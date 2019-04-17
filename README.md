@@ -28,6 +28,7 @@ equal
 Solution: provided in TestWrap Project
 
 Build locally: 
+  clone the project
   cd to Text_Wrap
   gradlew clean build
   
