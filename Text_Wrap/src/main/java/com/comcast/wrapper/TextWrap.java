@@ -46,7 +46,7 @@ public class TextWrap {
 				}
 			}
 
-			if (textWrapToken!=null) {
+			if (textWrapToken!="") {
 				System.out.println(textWrapToken.trim());
 			}
 			
