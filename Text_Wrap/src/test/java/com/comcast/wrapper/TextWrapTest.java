@@ -22,6 +22,22 @@ public class TextWrapTest {
 
 	}
 
+	//positive test case2
+	@Test
+	public void testPositiveUsecase2() {
+
+		String str = "success";
+		textWrap = new TextWrap();
+		boolean result;
+		try {
+			result = textWrap.textWrap(str);
+			assertTrue(result);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
 	// negative test case, Expected exception
 	@Test(expected = Exception.class)
 	public void testNegativeCase() throws Exception {
