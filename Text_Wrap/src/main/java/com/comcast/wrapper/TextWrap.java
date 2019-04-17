@@ -18,7 +18,7 @@ public class TextWrap {
 	 */
 	public boolean textWrap(String str) throws Exception {
 
-		if (str == null)
+		if (null == str)
 			throw new NullPointerException("input string cannot be null");
 
 		if (str.length() > 0) {
